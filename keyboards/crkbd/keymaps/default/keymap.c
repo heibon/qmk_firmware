@@ -35,11 +35,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       KC_TAB,     KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,  KC_BSPC,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCTL,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT,\
+      KC_LCTL,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN,  KC_ENT,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,   RAISE,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                          KC_ESC, GUI_T(KC_LANG2), RALT_T(KC_LANG1),     KC_ENT,   LOWER,  KC_SPC \
+                            KC_ESC,GUI_T(KC_LANG2),RALT_T(KC_LANG1),     KC_SPC,   LOWER, KC_RALT \
                                       //`--------------------------'  `--------------------------'
 
   ),
@@ -48,11 +48,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_TAB, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                      KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,  KC_GRV,\
   //,-----------------------------------------------------|                    ,-----------------------------------------------------|
-      KC_LCTL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_MINS,  KC_EQL, KC_LBRC, KC_RBRC, KC_BSLS, XXXXXXX,\
+      KC_LCTL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_MINS,  KC_EQL, KC_LBRC, KC_RBRC, KC_BSLS, KC_QUOT,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                        KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,   RAISE,\
+      KC_LSFT,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                        KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  ADJUST,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                          KC_ESC, GUI_T(KC_LANG2), RALT_T(KC_LANG1),     KC_ENT,  ADJUST,  KC_SPC \
+                            KC_ESC,GUI_T(KC_LANG2),RALT_T(KC_LANG1),     KC_SPC, KC_TRNS, KC_RALT \
                                       //`--------------------------'  `--------------------------'
     ),
 
@@ -62,9 +62,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX, XXXXXXX,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,LGUI(LSFT(KC_LCBR)),KC_PGDOWN,KC_PGUP,LGUI(LSFT(KC_RCBR)),XXXXXXX, KC_TRNS,\
+      KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,LGUI(LSFT(KC_LCBR)),LGUI(LSFT(KC_RCBR)),KC_PGDOWN,KC_PGUP,XXXXXXX, KC_TRNS,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                          KC_ESC, GUI_T(KC_LANG2), RALT_T(KC_LANG1),     KC_ENT, KC_TRNS,  KC_SPC \
+                            KC_ESC,GUI_T(KC_LANG2),RALT_T(KC_LANG1),     KC_SPC,   LOWER, KC_RALT \
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -74,9 +74,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,\
+      RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_RALT,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                     LT(LOWER, KC_HANJ), KC_LGUI, LT(LOWER, KC_SPC),  LT(RAISE, KC_ENT), KC_RALT, LT(RAISE, KC_HAEN) \
+                            KC_ESC,GUI_T(KC_LANG2),RALT_T(KC_LANG1),     KC_SPC, KC_TRNS, KC_RALT \
                                       //`--------------------------'  `--------------------------'
   )
 };
@@ -155,6 +155,7 @@ void iota_gfx_task_user(void) {
 }
 #endif//SSD1306OLED
 
+static bool lower_pressed = false;
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   if (record->event.pressed) {
 #ifdef SSD1306OLED
@@ -172,11 +173,19 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       return false;
     case LOWER:
       if (record->event.pressed) {
+        lower_pressed = true;
         layer_on(_LOWER);
         update_tri_layer_RGB(_LOWER, _RAISE, _ADJUST);
       } else {
         layer_off(_LOWER);
         update_tri_layer_RGB(_LOWER, _RAISE, _ADJUST);
+
+//        update_tri_layer(_LOWER, _RAISE, _ADJUST);
+        if (lower_pressed) { // (4)
+          register_code(KC_LANG2); // macOS の場合は KC_LANG2
+          unregister_code(KC_LANG2);
+        }
+        lower_pressed = false;
       }
       return false;
     case RAISE:
@@ -212,6 +221,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           RGB_current_mode = rgblight_config.mode;
         }
       #endif
+      break;
+    default: // (3)
+      if (record->event.pressed) {
+        // reset the flag
+        lower_pressed = false;
+      }
       break;
   }
   return true;
