@@ -39,20 +39,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,   RAISE,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                            KC_ESC,GUI_T(KC_LANG2),RALT_T(KC_LANG1),     KC_SPC,   LOWER, KC_RALT \
+                            KC_ESC,GUI_T(KC_LANG2),RALT_T(KC_LANG1),     KC_SPC,   LOWER, KC_RCTL \
                                       //`--------------------------'  `--------------------------'
 
   ),
 
   [_LOWER] = LAYOUT( \
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_TAB, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                      KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,  KC_GRV,\
+       KC_GRV, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                      KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,  KC_GRV,\
   //,-----------------------------------------------------|                    ,-----------------------------------------------------|
       KC_LCTL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_MINS,  KC_EQL, KC_LBRC, KC_RBRC, KC_BSLS, KC_QUOT,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                        KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,  ADJUST,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                            KC_ESC,GUI_T(KC_LANG2),RALT_T(KC_LANG1),     KC_SPC, KC_TRNS, KC_RALT \
+                            KC_ESC,GUI_T(KC_LANG2),RALT_T(KC_LANG1),     KC_SPC, KC_TRNS, KC_RCTL \
                                       //`--------------------------'  `--------------------------'
     ),
 
@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,LGUI(LSFT(KC_LCBR)),LGUI(LSFT(KC_RCBR)),KC_PGDOWN,KC_PGUP,XXXXXXX, KC_TRNS,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                            KC_ESC,GUI_T(KC_LANG2),RALT_T(KC_LANG1),     KC_SPC,   LOWER, KC_RALT \
+                            KC_ESC,GUI_T(KC_LANG2),RALT_T(KC_LANG1),     KC_SPC,   LOWER, KC_RCTL \
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_RALT,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                            KC_ESC,GUI_T(KC_LANG2),RALT_T(KC_LANG1),     KC_SPC, KC_TRNS, KC_RALT \
+                            KC_ESC,GUI_T(KC_LANG2),RALT_T(KC_LANG1),     KC_SPC, KC_TRNS, KC_RCTL \
                                       //`--------------------------'  `--------------------------'
   )
 };
